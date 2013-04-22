@@ -136,7 +136,8 @@ public class DummyAgent extends AgentImpl {
 
   private static final boolean DEBUG = false;
 
-  private float[] prices;
+  private float[] prices;  
+  
 
   protected void init(ArgEnumerator args) {
     prices = new float[agent.getAuctionNo()];
