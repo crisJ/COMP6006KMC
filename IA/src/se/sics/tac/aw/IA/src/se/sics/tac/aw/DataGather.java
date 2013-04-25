@@ -337,19 +337,10 @@ public class DataGather extends AgentImpl {
 	  if(timeUpdate - agent.getGameTimeLeft() >10000) {
 		  updatePrices();
 		  timeUpdate = agent.getGameTimeLeft();
-	  } 
-	  if(quote.getAuction()<16){
-		  if(updated[quote.getAuction()] == false){
+	  }
 			  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
 			  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
-			  log.fine("time update minus game left " + (timeUpdate-agent.getGameTimeLeft()) + "game time left is: " +  agent.getGameTimeLeft() );
-			  updated[quote.getAuction()] = true;
-		  }
-	  }
-	  else{
-		  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
-		  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
-	  }
+	  
 
 	  
 	  int auction = quote.getAuction();
