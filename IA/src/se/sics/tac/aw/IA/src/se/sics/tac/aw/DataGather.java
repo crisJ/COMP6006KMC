@@ -338,8 +338,8 @@ public class DataGather extends AgentImpl {
 		  updatePrices();
 		  timeUpdate = agent.getGameTimeLeft();
 	  }
-			  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
-			  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
+	  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
+	  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
 	  
 
 	  
