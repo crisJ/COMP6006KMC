@@ -184,12 +184,15 @@ public class DataGather extends AgentImpl {
   private static final boolean DEBUG = false;
   private float[] prices;
   
+  
   private boolean dayChangingAlert;
   private int[] probableNightsIn;
   private int[] probableNightsOut;
   private int[] information;
   private boolean[] hotelPreference;
   private long timeUpdate;
+  boolean[] updated = new boolean[16];
+  boolean loop = false;
   
  
  public DataGather(){
@@ -329,15 +332,25 @@ public class DataGather extends AgentImpl {
 	  
 	  
 	  
+
 	  
-	  
-	  if(timeUpdate - agent.getGameTimeLeft() >1000) {
+	  if(timeUpdate - agent.getGameTimeLeft() >10000) {
 		  updatePrices();
 		  timeUpdate = agent.getGameTimeLeft();
-		  log.fine("MARTINOS " + type + " " + day  + " " + quote.getAskPrice());
-		  log.fine("time update minus game left " + (timeUpdate-agent.getGameTimeLeft()) + "game time left is: " +  agent.getGameTimeLeft() );
-		  
+	  } 
+	  if(quote.getAuction()<16){
+		  if(updated[quote.getAuction()] == false){
+			  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
+			  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
+			  log.fine("time update minus game left " + (timeUpdate-agent.getGameTimeLeft()) + "game time left is: " +  agent.getGameTimeLeft() );
+			  updated[quote.getAuction()] = true;
+		  }
 	  }
+	  else{
+		  log.fine("MARTINOS " + type + " " + day  + " ASKPRICE: " + quote.getAskPrice() + "TIME: " + agent.getGameTimeLeft());
+		  log.fine("MARTINOS " + type + " " + day  + " BIDPRICE: " + quote.getBidPrice()+ "TIME: " + agent.getGameTimeLeft());
+	  }
+
 	  
 	  int auction = quote.getAuction();
 	    int auctionCategory = agent.getAuctionCategory(auction);
