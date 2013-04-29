@@ -1,8 +1,10 @@
-07/03 13:22:29 FINE is.InfoServer|Using game path: /Users/Cristina/Documents/Uni/IV/sem II/COMP6006/tacserver/public_html/history
-07/03 13:22:29 SEVERE is.InfoServer|You should register an admin user with the name 'admin'!
+07/03 13:27:56 FINE is.InfoServer|Using game path: /Users/Cristina/Documents/Uni/IV/sem II/COMP6006/tacserver/public_html/history
+07/03 13:27:56 SEVERE is.InfoServer|You should register an admin user with the name 'admin'!
 ************************************************************
 * You should register an admin user with the name 'admin'!
 ************************************************************
 
 
-07/03 13:22:29 INFO is.AppletServer|viewer server started at *:4041
+07/03 13:27:56 INFO is.AppletServer|viewer server started at *:4041
+07/03 13:36:24 FINE is.InfoServer|new coming game 1 (gameid=1,tacClassic)
+07/03 13:37:59 FINE is.TACStore|>>> Checking competition for game: 1 (1)
