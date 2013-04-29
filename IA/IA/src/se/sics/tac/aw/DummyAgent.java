@@ -244,7 +244,7 @@ public class DummyAgent extends AgentImpl {
 			delta[i] = 0;
 			previousFlightPrice[i] = 0;
 			flight_updates[i] = false;
-			for (int j = 0; j < 40; i++) {
+			for (int j = 0; j < 40; j++) {
 				// the chance for the hidden variable at start of the game is equal.
 				flight_hiddenxf[i][j] = 0.025d;
 
@@ -387,13 +387,24 @@ public class DummyAgent extends AgentImpl {
 			while (counter<8 && update){
 				update = flight_updates[counter];
 				counter++;
+				if(counter == 7 && update ==true){
+					
+					log.fine("value of BOOLEAN" + update);
+				}
 			}
 			//if all 8 flights are updated (true in all 8 spots in the array) then we calculate the
 			//updated bayesian variables:
-			if(update == true){
+			if(update){
+				String priceline = "MARTINOS PRICELINE id is: ";
 				for(int i =0;i<8;i++){
+					flight_updates[i]=false;
 					baysianProb(delta[i], i);
+					priceline += i + "\n\n";
+					for(int j=0;j<40;j++){
+						priceline += flight_hiddenxf[i][j] + "\n";
+					}
 				}
+				log.fine(priceline);
 				
 			}
 			
@@ -457,14 +468,13 @@ public class DummyAgent extends AgentImpl {
 	 * @param flightNumber numbers 1-4 mark the inflights days 1-4. numbers 5-8 marks ouflights on day 2-5.
 	 */
 	public void baysianProb(double delta, int flightNumber) {
-		long time = agent.getGameTimeLeft() / 540000;
-
+		double time = (double) agent.getGameTime()/540000;
 		double addition = 0f;
 
 		for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
 			double xf = i - 10;
-			if (i < 10) {
-				double xft = ((xf - 10) * time) + 10; // -10 till -1
+			double xft = ((xf - 10) * time) + 10; // -10 till -1
+			if (xft < 0) {
 				double centre = (xft + 10) / 2; // 0 till 4.5
 				double intermediate = Math.abs(delta - centre);
 				intermediate = intermediate / (Math.abs(xft - 10d));
@@ -480,7 +490,7 @@ public class DummyAgent extends AgentImpl {
 				intermediate = intermediate * flight_hiddenxf[flightNumber][i];
 				flight_hiddenxf[flightNumber][i] = intermediate;
 				addition += intermediate;
-			} else if (i == 10) {
+			} else if (xft == 0) {
 				double intermediate = Math.abs(delta);
 				intermediate = intermediate / (20d);
 				intermediate = 1d - intermediate;
@@ -490,21 +500,13 @@ public class DummyAgent extends AgentImpl {
 				intermediate = intermediate * flight_hiddenxf[flightNumber][i];
 				flight_hiddenxf[flightNumber][i] = intermediate;
 				addition += intermediate;
-
 			} else {
-				if (i == 15) {
-					System.out.println("a");
-
-				}
-				double xft = (((i - 10) - 10) * time) + 10;
-				if (xft < 1) {
-					System.err.println("SHOULD NOT BE");
-				}
 				double centre = (-10 + xft) / 2;
 				double intermediate = Math.abs(delta - centre);
 				intermediate = intermediate / (Math.abs((-10d - xft)));
 				intermediate = 1d - intermediate;
 
+				// if the delta is greater than the actual xf(t) then we penalize that percentage by a .45%.
 				if (delta < -10 || delta > xft) {
 					intermediate = 0.45; // the penalizing factor for not picking values in XF is 0.45.
 				}
@@ -513,11 +515,12 @@ public class DummyAgent extends AgentImpl {
 				addition += intermediate;
 			}
 		}
-		addition = 1 / addition;
-		for (int i = 0; i < flight_hiddenxf[flightNumber][i]; i++) {
-			flight_hiddenxf[flightNumber][i] = flight_hiddenxf[flightNumber][i] * addition;
+
+			addition = 1 / addition;
+			for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
+				flight_hiddenxf[flightNumber][i] = flight_hiddenxf[flightNumber][i] * addition;
+			}
 		}
-	}
 	
 	
 	
