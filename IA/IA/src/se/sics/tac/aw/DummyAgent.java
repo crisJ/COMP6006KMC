@@ -184,9 +184,7 @@ public class DummyAgent extends AgentImpl {
 	private int[] probableNightIn;
 	//the most probable day that the customer will fly out. This is initialized to the customerOutPreference
 	//and it changes if the hotels cannot be secured.
-	private int[] probableNightOut;
-	
-	
+	private int[] probableNightOut;	
 	
 	//NOT CURRENTLY BEING USED VARIABLES
 	//this variable is not used at the moment.
@@ -196,17 +194,9 @@ public class DummyAgent extends AgentImpl {
 	
 	//this is a variable that stores the hotel preferences for customer 0-8 respectively.True are the expensive
 	//hotels and false otherwise.
-	private boolean[] hotelPreference;
-	
-
-	
-	
+	private boolean[] hotelPreference;	
 	
 	// FLIGHT SPECIFIC VARIABLES INCOMING.
-	
-	
-	
-	
 
 	// a variable that contains the probability of that biases -10 to 30. initially it has value 1/40 but
 	// gradually
@@ -226,9 +216,41 @@ public class DummyAgent extends AgentImpl {
 	///this will be a variable that will signify the updates of the flights. if all the variables are true then
 	//all quotes are updated and we calculate the baysian  projection.
 	boolean[] flight_updates = new boolean[8];
+	
+	//Konstantinos start
+	//matrix that keeps hotel preferences
+	double[] hotel_pref = new double[8];
+	//matrix for hotel prices
+	double[] hotel_price = new double[8];
+	//how much the price changed
+	double[] hotel_price_diff = new double[8];
+	//checks if hotel prices are updated
+	boolean[] hotel_updates = new boolean[8];
+	//statistical importance factor inflights
+	double[] s_in = new double[4];
+	//statistical importance factor outflights
+	double[] s_out = new double[4];
+	//probability for a client to stay i nights
+	double[] stay_prob = new double[4];
+	//inflight ticket demand
+	double[] in_ticket = new double[4];
+	//outflight ticket demand
+	double[] out_ticket = new double[4];
+	//relative inflight ticket demand
+	double[] r_in_ticket = new double[4];
+	//relative outflight ticket demand
+	double[] r_out_ticket = new double[4];
+	//hotel room demand for day i
+	double[][] H_matrix = new double[4][1];
+	//R matrix for calculations
+	double[][] R_calc = new double[4][8];
+	//Matrix F for inflight, outflight demands
+	double[][] F_matrix = new double[8][1];
+	//Estimated bids for hotels
+	double[] hotel_bid = new double[4];
+	//Konstantinos end
 
 	public DummyAgent() {
-
 		hotelPreference = new boolean[8];
 		customerInPreference = new int[8];
 		customerOutPreference = new int[8];
@@ -247,11 +269,40 @@ public class DummyAgent extends AgentImpl {
 			for (int j = 0; j < 40; j++) {
 				// the chance for the hidden variable at start of the game is equal.
 				flight_hiddenxf[i][j] = 0.025d;
-
 			}
 		}
-
-	}
+		
+		//Hotel variable initializations
+		for (int i = 0; i < 8; i++){
+			hotel_pref[i] = 0;
+			hotel_price[i] = 0;
+			hotel_price_diff[i] = 0;
+			hotel_updates[i] = false;			
+		}
+		
+		for (int i = 0; i < 4; i++){
+			s_in[i] = 0.5 - 0.1 * i;
+			s_out[i] = 0.1 * (i+1) - 0.1;
+			stay_prob[i] = 0.5 - 0.1 * i;
+			in_ticket[i] = 0;
+			out_ticket[i] = 0;
+			r_in_ticket[i] = in_ticket[i]/64;
+			r_out_ticket[i] = out_ticket[i]/64;
+			H_matrix[i][0] = 0;
+			hotel_bid[i] = 0;
+		}
+		
+		R_calc = {{1, 0, 0, 0, 0, 0, 0, 0},
+				  {1, 1, 0, 0, -1, 0, 0, 0},
+				  {0, 0, 0, -1, 0, 0, 1, 1},
+				  {0, 0, 0, 0, 0, 0, 0, 1}
+		};
+		
+		F_matrix = { {64 * r_in_ticket[0]}, {64 * r_in_ticket[1]}, {64 * r_in_ticket[2]}, {64 * r_in_ticket[3]},
+					{64 * r_out_ticket[0]}, {64 * r_out_ticket[1]}, {64 * r_out_ticket[2]}, {64 * r_out_ticket[3]}
+				   };
+				   
+	}//end of DummyAgent
 
 	protected void init(ArgEnumerator args) {
 		prices = new float[agent.getAuctionNo()];
@@ -404,12 +455,104 @@ public class DummyAgent extends AgentImpl {
 						priceline += flight_hiddenxf[i][j] + "\n";
 					}
 				}
-				log.fine(priceline);
 				
+				log.fine(priceline);				
 			}
 			
 		}
 		
+		//Konstantinos start
+		if (quote.getAuction() < 8) {
+			int auctionID = quote.getAuction();
+			// if this is the 1st 10 seconds of the game.
+			if (previousFlightPrice[auctionID] == 0) {
+				// update the previous price
+				previousFlightPrice[auctionID] = quote.getAskPrice();
+			}
+			// if there is a previous price, hence the game is >10s life.
+			else {
+				// update the difference in value for flight 1 with the previous flight at x-1.
+				delta[auctionID] = quote.getAskPrice() - previousFlightPrice[auctionID];
+				// update the current "old" price of the flight
+				previousFlightPrice[auctionID] = quote.getAskPrice();
+				//if all the flight prices have been updated and the deltas have been computed then
+				//set a flag to true that will be used to run bayesian probability update.
+				flight_updates[auctionID] = true;
+			}
+			boolean update = true;
+			int counter = 0; 
+			//a check to all 8 spots in the array
+			while (counter < 8 && update){
+				update = flight_updates[counter];
+				counter++;
+				/*if(counter == 7 && update ==true){
+					
+					log.fine("value of BOOLEAN" + update);
+				}*/
+			}
+			//if all 8 flights are updated (true in all 8 spots in the array) then we calculate the
+			//updated bayesian variables:
+			if(update){
+				for(int i = 0; i < 8; i++){
+					flight_updates[i]=false;									
+					}
+				//Run prediction according to flight prices
+				hotel_price_prediction(previousFlightPrice);
+				hotel_bid_calculation();
+				}
+				log.fine(priceline);			
+		}//Konstantinos end
+		
+	} //quoteUpdated end		
+		
+		public void hotel_price_prediction(double[] flightPrice){
+				//f to help in calculations
+				double f[] = new double[4];
+				//calculate f for inflights and sum of elements of matrix f
+				for(int i = 0; i < 4; i++){
+					f[i] = s_in[i] * (400 - flightPrice[i])/150;
+				}
+				double fsum = f[0] + f[1] + f[2] + f[3];
+				//calculate the e coefficients
+				for(int i = 0; i < 4; i++){
+					r_in_ticket[i] = f[i]/fsum;
+				}		
+				//calculate f for outflights and sum of elements of matrix f
+				for(int i = 0; i < 4; i++){
+					f[i] = s_out[i] * (400 - flightPrice[i+4])/150;
+				}
+				fsum = f[0] + f[1] + f[2] + f[3];
+				//calculate the ì coefficient
+				for(int i = 0; i < 4; i++){
+					r_out_ticket[i] = f[i]/fsum;
+				}					
+				//Calculate the H matrix, maps flight demand to hotel demand
+				for (i=0; i<8; i++){
+					for(j=0; j<4; j++){
+						H_matrix [j][0] = R_calc[j][i] * F_matrix[i][0];		
+					}
+				}
+		}
+		
+		public void hotel_bid_calculation(){
+			//This is the mean value of the previous competitions
+			double m[] = new double[4];
+			//These values I have to find...
+			m[0] = 350; m[1] = 360; m[2] = 370; m[3] = 380;
+			//Calculate the new bids for each day
+			for(int i = 0; i < 4; i++){
+				//If our estimation is a lot larger than the past price, leave it the same
+				if(H_matrix[i][0] >= 2*m[i]){
+					hotel_bid[i] = H_matrix[i][0];
+					
+				}else if(H_matrix[i][0] <= m[i] / 2 || H_matrix[i][0] >= (3/2) * m[i]){
+					hotel_bid[i] = (2/3) * H_matrix[i][0] + (1/3) * m[i];
+				
+				}else{
+					hotel_bid[i] = (1/2) * (H_matrix[i][0] + m[i]);
+				}
+			}
+		}
 		
 		//this is most probably depriciated by now as i figure that each part will use his own variables.
 		updatePrices();

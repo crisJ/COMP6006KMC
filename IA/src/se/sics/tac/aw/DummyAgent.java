@@ -30,7 +30,7 @@
  * Retrieving information about the current Game
  * ---------------------------------------------
  * int getGameID()
- *  - returns the id of current game or -1 if no game is currently plaing
+ *  - returns the id of current game or -1 if no game is currently playing
  *
  * getServerTime()
  *  - returns the current server time in milliseconds
