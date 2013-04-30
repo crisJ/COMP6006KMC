@@ -1,0 +1,926 @@
+30/04 16:42:01 FINE aw.TACAgent|Log for game 7 started
+************************************************************
+* Log for game 7 started
+************************************************************
+
+
+30/04 16:42:01 FINE aw.TACAgent|Starting up game: 7
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getGameAuctionIDs><gameID>7</gameID></getGameAuctionIDs>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getGameAuctionIDs><startTime>1367340120</startTime><auctionIDs><list><TACAuctionTuple><category>flight</category><type>1</type><day>1</day><ID>57</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>1</type><day>2</day><ID>58</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>1</type><day>3</day><ID>59</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>1</type><day>4</day><ID>60</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>0</type><day>2</day><ID>61</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>0</type><day>3</day><ID>62</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>0</type><day>4</day><ID>63</ID></TACAuctionTuple><TACAuctionTuple><category>flight</category><type>0</type><day>5</day><ID>64</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>1</type><day>1</day><ID>65</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>1</type><day>2</day><ID>66</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>1</type><day>3</day><ID>67</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>1</type><day>4</day><ID>68</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>0</type><day>1</day><ID>69</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>0</type><day>2</day><ID>70</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>0</type><day>3</day><ID>71</ID></TACAuctionTuple><TACAuctionTuple><category>hotel</category><type>0</type><day>4</day><ID>72</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>1</type><day>1</day><ID>73</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>1</type><day>2</day><ID>74</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>1</type><day>3</day><ID>75</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>1</type><day>4</day><ID>76</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>2</type><day>1</day><ID>77</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>2</type><day>2</day><ID>78</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>2</type><day>3</day><ID>79</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>2</type><day>4</day><ID>80</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>3</type><day>1</day><ID>81</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>3</type><day>2</day><ID>82</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>3</type><day>3</day><ID>83</ID></TACAuctionTuple><TACAuctionTuple><category>entertainment</category><type>3</type><day>4</day><ID>84</ID></TACAuctionTuple></list></auctionIDs><commandStatus>0</commandStatus></getGameAuctionIDs>' responseTime: 2 avg: 2.0 count: 4
+30/04 16:42:01 FINEST aw.TACAgent|Auction 0 (Inflight 1): 57
+30/04 16:42:01 FINEST aw.TACAgent|Auction 1 (Inflight 2): 58
+30/04 16:42:01 FINEST aw.TACAgent|Auction 2 (Inflight 3): 59
+30/04 16:42:01 FINEST aw.TACAgent|Auction 3 (Inflight 4): 60
+30/04 16:42:01 FINEST aw.TACAgent|Auction 4 (Outflight 2): 61
+30/04 16:42:01 FINEST aw.TACAgent|Auction 5 (Outflight 3): 62
+30/04 16:42:01 FINEST aw.TACAgent|Auction 6 (Outflight 4): 63
+30/04 16:42:01 FINEST aw.TACAgent|Auction 7 (Outflight 5): 64
+30/04 16:42:01 FINEST aw.TACAgent|Auction 12 (Good Hotel 1): 65
+30/04 16:42:01 FINEST aw.TACAgent|Auction 13 (Good Hotel 2): 66
+30/04 16:42:01 FINEST aw.TACAgent|Auction 14 (Good Hotel 3): 67
+30/04 16:42:01 FINEST aw.TACAgent|Auction 15 (Good Hotel 4): 68
+30/04 16:42:01 FINEST aw.TACAgent|Auction 8 (Cheap Hotel 1): 69
+30/04 16:42:01 FINEST aw.TACAgent|Auction 9 (Cheap Hotel 2): 70
+30/04 16:42:01 FINEST aw.TACAgent|Auction 10 (Cheap Hotel 3): 71
+30/04 16:42:01 FINEST aw.TACAgent|Auction 11 (Cheap Hotel 4): 72
+30/04 16:42:01 FINEST aw.TACAgent|Auction 16 (Alligator 1): 73
+30/04 16:42:01 FINEST aw.TACAgent|Auction 17 (Alligator 2): 74
+30/04 16:42:01 FINEST aw.TACAgent|Auction 18 (Alligator 3): 75
+30/04 16:42:01 FINEST aw.TACAgent|Auction 19 (Alligator 4): 76
+30/04 16:42:01 FINEST aw.TACAgent|Auction 20 (Amusement 1): 77
+30/04 16:42:01 FINEST aw.TACAgent|Auction 21 (Amusement 2): 78
+30/04 16:42:01 FINEST aw.TACAgent|Auction 22 (Amusement 3): 79
+30/04 16:42:01 FINEST aw.TACAgent|Auction 23 (Amusement 4): 80
+30/04 16:42:01 FINEST aw.TACAgent|Auction 24 (Museum 1): 81
+30/04 16:42:01 FINEST aw.TACAgent|Auction 25 (Museum 2): 82
+30/04 16:42:01 FINEST aw.TACAgent|Auction 26 (Museum 3): 83
+30/04 16:42:01 FINEST aw.TACAgent|Auction 27 (Museum 4): 84
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getGameConsts><gameID>7</gameID></getGameConsts>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getGameConsts><gameType>tacClassic</gameType><numClients>8</numClients><numAgents>8</numAgents><gameLength>540</gameLength><commandStatus>0</commandStatus></getGameConsts>' responseTime: 1 avg: 1.0 count: 5
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getGameParams><gameID>7</gameID></getGameParams>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getGameParams><clientPreferences><list><clientPrefTuple><client>1</client><arrival>2</arrival><departure>3</departure><hotel>111.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>93.00</price></typePriceTuple><typePriceTuple><type>2</type><price>36.00</price></typePriceTuple><typePriceTuple><type>3</type><price>73.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>2</client><arrival>3</arrival><departure>5</departure><hotel>73.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>48.00</price></typePriceTuple><typePriceTuple><type>2</type><price>40.00</price></typePriceTuple><typePriceTuple><type>3</type><price>54.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>3</client><arrival>2</arrival><departure>4</departure><hotel>119.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>133.00</price></typePriceTuple><typePriceTuple><type>2</type><price>90.00</price></typePriceTuple><typePriceTuple><type>3</type><price>113.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>4</client><arrival>4</arrival><departure>5</departure><hotel>117.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>61.00</price></typePriceTuple><typePriceTuple><type>2</type><price>169.00</price></typePriceTuple><typePriceTuple><type>3</type><price>83.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>5</client><arrival>1</arrival><departure>2</departure><hotel>110.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>132.00</price></typePriceTuple><typePriceTuple><type>2</type><price>150.00</price></typePriceTuple><typePriceTuple><type>3</type><price>87.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>6</client><arrival>2</arrival><departure>3</departure><hotel>146.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>140.00</price></typePriceTuple><typePriceTuple><type>2</type><price>152.00</price></typePriceTuple><typePriceTuple><type>3</type><price>71.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>7</client><arrival>3</arrival><departure>5</departure><hotel>149.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>33.00</price></typePriceTuple><typePriceTuple><type>2</type><price>0.00</price></typePriceTuple><typePriceTuple><type>3</type><price>54.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple><clientPrefTuple><client>8</client><arrival>4</arrival><departure>5</departure><hotel>87.00</hotel><ticketPreferences><list><typePriceTuple><type>1</type><price>98.00</price></typePriceTuple><typePriceTuple><type>2</type><price>27.00</price></typePriceTuple><typePriceTuple><type>3</type><price>189.00</price></typePriceTuple></list></ticketPreferences></clientPrefTuple></list></clientPreferences><ticketEndowments><list><ticketEndowmentTuple><type>1</type><day>1</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>1</type><day>2</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>1</type><day>3</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>1</type><day>4</day><quantity>4</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>2</type><day>1</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>2</type><day>2</day><quantity>4</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>2</type><day>3</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>2</type><day>4</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>3</type><day>1</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>3</type><day>2</day><quantity>2</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>3</type><day>3</day><quantity>0</quantity></ticketEndowmentTuple><ticketEndowmentTuple><type>3</type><day>4</day><quantity>2</quantity></ticketEndowmentTuple></list></ticketEndowments><commandStatus>0</commandStatus></getGameParams>' responseTime: 5 avg: 2.0 count: 6
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<transIDs><earliestTransID>-1</earliestTransID></transIDs>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><transIDs><ids><list></list></ids><more>0</more><commandStatus>0</commandStatus></transIDs>' responseTime: 4 avg: 2.0 count: 7
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 2 OUTFLIGHT: 3 HOTEL: 111gameLEngth: 538954
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 3 OUTFLIGHT: 5 HOTEL: 73gameLEngth: 538953
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 2 OUTFLIGHT: 4 HOTEL: 119gameLEngth: 538953
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 4 OUTFLIGHT: 5 HOTEL: 117gameLEngth: 538953
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 1 OUTFLIGHT: 2 HOTEL: 110gameLEngth: 538952
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 2 OUTFLIGHT: 3 HOTEL: 146gameLEngth: 538952
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 3 OUTFLIGHT: 5 HOTEL: 149gameLEngth: 538952
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS TESTING, INFLIGHT: 4 OUTFLIGHT: 5 HOTEL: 87gameLEngth: 538952
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 19 (Alligator 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>76</auctionID><bidString>((-4 200.0))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2269</bidID><bidHash>((-4 200.0000))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 3 avg: 2.0 count: 8
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 21 (Amusement 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>78</auctionID><bidString>((-4 200.0))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2270</bidID><bidHash>((-4 200.0000))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 5 avg: 2.0 count: 9
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 25 (Museum 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>82</auctionID><bidString>((-2 200.0))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2271</bidID><bidHash>((-2 200.0000))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 8 avg: 3.0 count: 10
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 27 (Museum 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>84</auctionID><bidString>((-2 200.0))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2272</bidID><bidHash>((-2 200.0000))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 9 avg: 3.0 count: 11
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 0 (Inflight 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>57</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>267.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>267.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 10 avg: 4.0 count: 12
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS inflight 1 ASKPRICE: 267.0 TIME: 538940
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 1 (Inflight 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>58</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>398.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 12 avg: 5.0 count: 13
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS inflight 2 ASKPRICE: 398.0 TIME: 538938
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 2 (Inflight 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>59</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>265.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>265.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 12 avg: 5.0 count: 14
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS inflight 3 ASKPRICE: 265.0 TIME: 538936
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 3 (Inflight 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>60</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>348.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>348.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 14 avg: 6.0 count: 15
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS inflight 4 ASKPRICE: 348.0 TIME: 538935
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 4 (Outflight 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>61</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>360.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 16 avg: 6.0 count: 16
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS outflight 2 ASKPRICE: 360.0 TIME: 538933
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 5 (Outflight 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>62</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>340.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>340.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 21 avg: 7.0 count: 17
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS outflight 3 ASKPRICE: 340.0 TIME: 538928
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 6 (Outflight 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>63</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>360.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 23 avg: 8.0 count: 18
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS outflight 4 ASKPRICE: 360.0 TIME: 538926
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 7 (Outflight 5)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>64</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>305.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340130</nextQuoteTime><lastClearPrice>305.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 24 avg: 9.0 count: 19
+30/04 16:42:01 FINE aw.DummyAgent|MARTINOS outflight 5 ASKPRICE: 305.0 TIME: 538925
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 16 (Alligator 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>73</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>112.1294</lastAskPrice><lastBidPrice>50.0155</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 26 avg: 10.0 count: 20
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 17 (Alligator 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>74</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>161.9698</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 27 avg: 10.0 count: 21
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 18 (Alligator 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>75</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>129.1937</lastAskPrice><lastBidPrice>50.0170</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 28 avg: 11.0 count: 22
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 19 (Alligator 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>76</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>108.0154</lastAskPrice><lastBidPrice>50.0213</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 29 avg: 12.0 count: 23
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 20 (Amusement 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>77</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>120.4546</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 30 avg: 13.0 count: 24
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 21 (Amusement 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>78</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>115.3725</lastAskPrice><lastBidPrice>50.0236</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 35 avg: 14.0 count: 25
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 22 (Amusement 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>79</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>138.6024</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 37 avg: 14.0 count: 26
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 23 (Amusement 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>80</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>109.7410</lastAskPrice><lastBidPrice>50.0234</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 38 avg: 15.0 count: 27
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 24 (Museum 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>81</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>146.4903</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 39 avg: 16.0 count: 28
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 25 (Museum 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>82</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>111.2670</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 40 avg: 17.0 count: 29
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 26 (Museum 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>83</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>116.5795</lastAskPrice><lastBidPrice>50.0102</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 41 avg: 18.0 count: 30
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 27 (Museum 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>84</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>131.9192</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340120</lastQuoteTime><nextQuoteTime>1367340151</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 42 avg: 18.0 count: 31
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 8 (Cheap Hotel 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>69</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 44 avg: 19.0 count: 32
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 9 (Cheap Hotel 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>70</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 45 avg: 20.0 count: 33
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 10 (Cheap Hotel 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>71</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 54 avg: 21.0 count: 34
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 11 (Cheap Hotel 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>72</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 55 avg: 22.0 count: 35
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 12 (Good Hotel 1)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>65</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 56 avg: 23.0 count: 36
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 13 (Good Hotel 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>66</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 57 avg: 24.0 count: 37
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 14 (Good Hotel 3)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>67</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 59 avg: 25.0 count: 38
+30/04 16:42:01 FINEST aw.TACMessage|requesting quotes for auction 15 (Good Hotel 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>68</auctionID></getQuote>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>0.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>0</lastQuoteTime><nextQuoteTime>1367340180</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>0</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 59 avg: 26.0 count: 39
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2269</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-4 200.0000))</bidString><bidHash>((-4 200.0000))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 58 avg: 26.0 count: 40
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2270</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-4 200.0000))</bidString><bidHash>((-4 200.0000))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 57 avg: 27.0 count: 41
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2271</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-2 200.0000))</bidString><bidHash>((-2 200.0000))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 54 avg: 28.0 count: 42
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2272</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-2 200.0000))</bidString><bidHash>((-2 200.0000))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 54 avg: 28.0 count: 43
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 19 (Alligator 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>76</auctionID><bidString>((-4 199.82))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2273</bidID><bidHash>((-4 199.8200))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 33 avg: 28.0 count: 44
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 21 (Amusement 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>78</auctionID><bidString>((-4 199.81883))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2274</bidID><bidHash>((-4 199.8188))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 29 avg: 28.0 count: 45
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 25 (Museum 2)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>82</auctionID><bidString>((-2 199.81816))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2275</bidID><bidHash>((-2 199.8182))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 25 avg: 28.0 count: 46
+30/04 16:42:01 FINEST aw.TACMessage|submitting bid (submitBid) to auction 27 (Museum 4)
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<submitBid><auctionID>84</auctionID><bidString>((-2 199.81784))</bidString><expireTime>0</expireTime><expireMode>0</expireMode><divisible>1</divisible></submitBid>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><submitBid><bidID>2276</bidID><bidHash>((-2 199.8178))</bidHash><rejectReason>0</rejectReason><commandStatus>0</commandStatus></submitBid>' responseTime: 24 avg: 28.0 count: 47
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2273</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-4 199.8200))</bidString><bidHash>((-4 199.8200))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 3 avg: 28.0 count: 48
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2274</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-4 199.8188))</bidString><bidHash>((-4 199.8188))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 2 avg: 27.0 count: 49
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2275</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-2 199.8182))</bidString><bidHash>((-2 199.8182))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 2 avg: 27.0 count: 50
+30/04 16:42:01 FINEST aw.TACMessage|XML out: '<bidInfo><bidID>2276</bidID></bidInfo>'
+30/04 16:42:01 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><bidInfo><bidString>((-2 199.8178))</bidString><bidHash>((-2 199.8178))</bidHash><rejectReason>0</rejectReason><processingState>2</processingState><timeProcessed>1367340121</timeProcessed><timeClosed>0</timeClosed><withdrawState>0</withdrawState><timeWithdrawRequest>0</timeWithdrawRequest><timeWithdraw>0</timeWithdraw><commandStatus>0</commandStatus></bidInfo>' responseTime: 4 avg: 26.0 count: 51
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 0 (Inflight 1)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>57</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>271.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>267.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 37 avg: 26.0 count: 52
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS inflight 1 ASKPRICE: 271.0 TIME: 528883
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 1 (Inflight 2)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>58</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>392.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 55 avg: 27.0 count: 53
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS inflight 2 ASKPRICE: 392.0 TIME: 528882
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 2 (Inflight 3)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>59</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>275.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>265.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 56 avg: 27.0 count: 54
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS inflight 3 ASKPRICE: 275.0 TIME: 528881
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 3 (Inflight 4)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>60</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>350.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>348.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 57 avg: 28.0 count: 55
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS inflight 4 ASKPRICE: 350.0 TIME: 528881
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 4 (Outflight 2)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>61</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>350.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 58 avg: 29.0 count: 56
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS outflight 2 ASKPRICE: 350.0 TIME: 528880
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 5 (Outflight 3)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>62</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>342.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>340.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 58 avg: 29.0 count: 57
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS outflight 3 ASKPRICE: 342.0 TIME: 528879
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 6 (Outflight 4)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>63</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>350.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 59 avg: 30.0 count: 58
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS outflight 4 ASKPRICE: 350.0 TIME: 528878
+30/04 16:42:11 FINEST aw.TACMessage|requesting quotes for auction 7 (Outflight 5)
+30/04 16:42:11 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>64</auctionID></getQuote>'
+30/04 16:42:11 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>315.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340130</lastQuoteTime><nextQuoteTime>1367340140</nextQuoteTime><lastClearPrice>305.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 59 avg: 30.0 count: 59
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.20598148148148177the xft is: 9.588037037037036 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.19568240740740706the xft is: 9.608635185185186 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.18538333333333323the xft is: 9.629233333333334 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.1750842592592594the xft is: 9.649831481481481 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.1647851851851856the xft is: 9.670429629629629 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.15448611111111088the xft is: 9.691027777777778 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.14418703703703706the xft is: 9.711625925925926 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.13388796296296324the xft is: 9.732224074074074 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.12358888888888853the xft is: 9.752822222222223 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.1132898148148147the xft is: 9.77342037037037 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.10299074074074088the xft is: 9.794018518518518 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.09269166666666706the xft is: 9.814616666666666 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.08239259259259235the xft is: 9.835214814814815 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.07209351851851853the xft is: 9.855812962962963 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.06179444444444471the xft is: 9.87641111111111 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.05149537037037the xft is: 9.89700925925926 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.041196296296296175the xft is: 9.917607407407408 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.030897222222222354the xft is: 9.938205555555555 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.020598148148148532the xft is: 9.958803703703703 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.010299074074073822the xft is: 9.979401851851852 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.0the xft is: 10.0 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.010299074074073822the xft is: 10.020598148148148 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.020598148148148532the xft is: 10.041196296296297 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.030897222222222354the xft is: 10.061794444444445 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.041196296296296175the xft is: 10.082392592592592 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.05149537037037the xft is: 10.10299074074074 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.06179444444444471the xft is: 10.12358888888889 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.07209351851851853the xft is: 10.144187037037037 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.08239259259259235the xft is: 10.164785185185185 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.09269166666666706the xft is: 10.185383333333334 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.10299074074074088the xft is: 10.205981481481482 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.1132898148148147the xft is: 10.22657962962963 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.12358888888888853the xft is: 10.247177777777777 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.13388796296296324the xft is: 10.267775925925926 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.14418703703703706the xft is: 10.288374074074074 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.15448611111111088the xft is: 10.308972222222222 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.1647851851851856the xft is: 10.329570370370371 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.1750842592592594the xft is: 10.350168518518519 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.18538333333333323the xft is: 10.370766666666666 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.19568240740740706the xft is: 10.391364814814814 the delta is: 4.0
+30/04 16:42:11 FINE aw.DummyAgent|-0.003914030136482243
+
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.2061666666666664the xft is: 9.587666666666667 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.1958583333333337the xft is: 9.608283333333333 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.1855500000000001the xft is: 9.6289 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.17524166666666652the xft is: 9.649516666666667 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.16493333333333293the xft is: 9.670133333333334 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.15462500000000023the xft is: 9.69075 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.14431666666666665the xft is: 9.711366666666667 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.13400833333333306the xft is: 9.731983333333334 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.12370000000000037the xft is: 9.7526 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.11339166666666678the xft is: 9.773216666666666 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.1030833333333332the xft is: 9.793833333333334 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.09277499999999961the xft is: 9.81445 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.08246666666666691the xft is: 9.835066666666666 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.07215833333333332the xft is: 9.855683333333333 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.06184999999999974the xft is: 9.8763 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.05154166666666704the xft is: 9.896916666666666 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.041233333333333455the xft is: 9.917533333333333 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.03092499999999987the xft is: 9.93815 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.020616666666666283the xft is: 9.958766666666667 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.010308333333333586the xft is: 9.979383333333333 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.0the xft is: 10.0 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.010308333333333586the xft is: 10.020616666666667 the delta is: -6.0
+30/04 16:42:11 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.020616666666666283the xft is: 10.041233333333333 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.03092499999999987the xft is: 10.06185 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.041233333333333455the xft is: 10.082466666666667 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.05154166666666704the xft is: 10.103083333333334 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.06184999999999974the xft is: 10.1237 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.07215833333333332the xft is: 10.144316666666667 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.08246666666666691the xft is: 10.164933333333334 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.09277499999999961the xft is: 10.18555 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.1030833333333332the xft is: 10.206166666666666 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.11339166666666678the xft is: 10.226783333333334 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.12370000000000037the xft is: 10.2474 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.13400833333333306the xft is: 10.268016666666666 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.14431666666666665the xft is: 10.288633333333333 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.15462500000000023the xft is: 10.30925 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.16493333333333293the xft is: 10.329866666666666 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.17524166666666652the xft is: 10.350483333333333 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.1855500000000001the xft is: 10.3711 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.1958583333333337the xft is: 10.391716666666667 the delta is: -6.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.005566155582745807
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.20642592592592557the xft is: 9.587148148148149 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.19610462962962938the xft is: 9.607790740740741 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.1857833333333332the xft is: 9.628433333333334 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.175462037037037the xft is: 9.649075925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.1651407407407408the xft is: 9.669718518518518 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.15481944444444462the xft is: 9.69036111111111 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.14449814814814843the xft is: 9.711003703703703 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.13417685185185224the xft is: 9.731646296296296 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.12385555555555516the xft is: 9.75228888888889 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.11353425925925897the xft is: 9.772931481481482 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.10321296296296278the xft is: 9.793574074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.0928916666666666the xft is: 9.814216666666667 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.0825703703703704the xft is: 9.83485925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.07224907407407422the xft is: 9.855501851851852 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.061927777777778026the xft is: 9.876144444444444 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.051606481481481836the xft is: 9.896787037037036 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.04128518518518476the xft is: 9.91742962962963 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.03096388888888857the xft is: 9.938072222222223 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.02064259259259238the xft is: 9.958714814814815 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.01032129629629619the xft is: 9.979357407407408 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.0the xft is: 10.0 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.01032129629629619the xft is: 10.020642592592592 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.02064259259259238the xft is: 10.041285185185185 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.03096388888888857the xft is: 10.061927777777777 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.04128518518518476the xft is: 10.08257037037037 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.051606481481481836the xft is: 10.103212962962964 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.061927777777778026the xft is: 10.123855555555556 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.07224907407407422the xft is: 10.144498148148148 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.0825703703703704the xft is: 10.16514074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.0928916666666666the xft is: 10.185783333333333 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.10321296296296278the xft is: 10.206425925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.11353425925925897the xft is: 10.227068518518518 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.12385555555555516the xft is: 10.24771111111111 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.13417685185185224the xft is: 10.268353703703704 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.14449814814814843the xft is: 10.288996296296297 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.15481944444444462the xft is: 10.30963888888889 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.1651407407407408the xft is: 10.330281481481482 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.175462037037037the xft is: 10.350924074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.1857833333333332the xft is: 10.371566666666666 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.19610462962962938the xft is: 10.392209259259259 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.0038316322123272094
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.206666666666667the xft is: 9.586666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.19633333333333347the xft is: 9.607333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.18599999999999994the xft is: 9.628 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.17566666666666642the xft is: 9.648666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.1653333333333329the xft is: 9.669333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.15500000000000025the xft is: 9.69 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.14466666666666672the xft is: 9.710666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.1343333333333332the xft is: 9.731333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.12399999999999967the xft is: 9.752 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.11366666666666703the xft is: 9.772666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.1033333333333335the xft is: 9.793333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.09299999999999997the xft is: 9.814 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.08266666666666644the xft is: 9.834666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.07233333333333292the xft is: 9.855333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.06200000000000028the xft is: 9.876 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.05166666666666675the xft is: 9.896666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.04133333333333322the xft is: 9.917333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.030999999999999694the xft is: 9.938 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.020666666666667055the xft is: 9.958666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.010333333333333528the xft is: 9.979333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.0the xft is: 10.0 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.010333333333333528the xft is: 10.020666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.020666666666667055the xft is: 10.041333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.030999999999999694the xft is: 10.062 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.04133333333333322the xft is: 10.082666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.05166666666666675the xft is: 10.103333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.06200000000000028the xft is: 10.124 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.07233333333333292the xft is: 10.144666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.08266666666666644the xft is: 10.165333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.09299999999999997the xft is: 10.186 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.1033333333333335the xft is: 10.206666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.11366666666666703the xft is: 10.227333333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.12399999999999967the xft is: 10.248 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.1343333333333332the xft is: 10.268666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.14466666666666672the xft is: 10.289333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.15500000000000025the xft is: 10.31 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.1653333333333329the xft is: 10.330666666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.17566666666666642the xft is: 10.351333333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.18599999999999994the xft is: 10.372 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.19633333333333347the xft is: 10.392666666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.004219882493261824
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.20683333333333298the xft is: 9.586333333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.19649166666666673the xft is: 9.607016666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.1861499999999996the xft is: 9.6277 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.17580833333333334the xft is: 9.648383333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.1654666666666671the xft is: 9.669066666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.15512499999999996the xft is: 9.68975 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.1447833333333337the xft is: 9.710433333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.13444166666666657the xft is: 9.731116666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.12410000000000032the xft is: 9.7518 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.11375833333333318the xft is: 9.772483333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.10341666666666693the xft is: 9.793166666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.0930749999999998the xft is: 9.81385 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.08273333333333355the xft is: 9.834533333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.07239166666666641the xft is: 9.855216666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.06205000000000016the xft is: 9.8759 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.05170833333333302the xft is: 9.896583333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.041366666666666774the xft is: 9.917266666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.031024999999999636the xft is: 9.93795 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.020683333333333387the xft is: 9.958633333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.01034166666666625the xft is: 9.979316666666668 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.0the xft is: 10.0 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.01034166666666625the xft is: 10.020683333333332 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.020683333333333387the xft is: 10.041366666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.031024999999999636the xft is: 10.06205 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.041366666666666774the xft is: 10.082733333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.05170833333333302the xft is: 10.103416666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.06205000000000016the xft is: 10.1241 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.07239166666666641the xft is: 10.144783333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.08273333333333355the xft is: 10.165466666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.0930749999999998the xft is: 10.18615 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.10341666666666693the xft is: 10.206833333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.11375833333333318the xft is: 10.227516666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.12410000000000032the xft is: 10.2482 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.13444166666666657the xft is: 10.268883333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.1447833333333337the xft is: 10.289566666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.15512499999999996the xft is: 10.31025 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.1654666666666671the xft is: 10.330933333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.17580833333333334the xft is: 10.351616666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.1861499999999996the xft is: 10.3723 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.19649166666666673the xft is: 10.392983333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.0051754629629629624
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.2070185185185185the xft is: 9.585962962962963 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.19666759259259248the xft is: 9.606664814814815 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.18631666666666646the xft is: 9.627366666666667 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.17596574074074045the xft is: 9.648068518518519 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.16561481481481444the xft is: 9.668770370370371 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.1552638888888893the xft is: 9.689472222222221 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.1449129629629633the xft is: 9.710174074074073 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.13456203703703729the xft is: 9.730875925925925 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.12421111111111127the xft is: 9.751577777777777 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.11386018518518526the xft is: 9.77227962962963 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.10350925925925925the xft is: 9.792981481481482 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.09315833333333323the xft is: 9.813683333333334 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.08280740740740722the xft is: 9.834385185185186 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.0724564814814812the xft is: 9.855087037037038 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.06210555555555519the xft is: 9.87578888888889 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.05175462962963007the xft is: 9.89649074074074 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.04140370370370405the xft is: 9.917192592592592 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.03105277777777804the xft is: 9.937894444444444 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.020701851851852027the xft is: 9.958596296296296 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.010350925925926013the xft is: 9.979298148148148 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.0the xft is: 10.0 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.010350925925926013the xft is: 10.020701851851852 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.020701851851852027the xft is: 10.041403703703704 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.03105277777777804the xft is: 10.062105555555556 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.04140370370370405the xft is: 10.082807407407408 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.05175462962963007the xft is: 10.10350925925926 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.06210555555555519the xft is: 10.12421111111111 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.0724564814814812the xft is: 10.144912962962962 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.08280740740740722the xft is: 10.165614814814814 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.09315833333333323the xft is: 10.186316666666666 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.10350925925925925the xft is: 10.207018518518518 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.11386018518518526the xft is: 10.22772037037037 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.12421111111111127the xft is: 10.248422222222223 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.13456203703703729the xft is: 10.269124074074075 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.1449129629629633the xft is: 10.289825925925927 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.1552638888888893the xft is: 10.310527777777779 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.16561481481481444the xft is: 10.331229629629629 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.17596574074074045the xft is: 10.351931481481481 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.18631666666666646the xft is: 10.372633333333333 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.19666759259259248the xft is: 10.393335185185185 the delta is: 2.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.004226191303709745
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.20722222222222264the xft is: 9.585555555555555 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.1968611111111107the xft is: 9.606277777777779 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.18649999999999967the xft is: 9.627 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.17613888888888862the xft is: 9.647722222222223 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.16577777777777758the xft is: 9.668444444444445 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.15541666666666654the xft is: 9.689166666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.1450555555555555the xft is: 9.709888888888889 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.13469444444444445the xft is: 9.730611111111111 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.1243333333333334the xft is: 9.751333333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.11397222222222236the xft is: 9.772055555555555 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.10361111111111132the xft is: 9.792777777777777 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.09325000000000028the xft is: 9.8135 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.08288888888888923the xft is: 9.834222222222222 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.07252777777777819the xft is: 9.854944444444444 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.06216666666666626the xft is: 9.875666666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.051805555555555216the xft is: 9.89638888888889 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.04144444444444417the xft is: 9.917111111111112 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.03108333333333313the xft is: 9.937833333333334 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.020722222222222086the xft is: 9.958555555555556 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.010361111111111043the xft is: 9.979277777777778 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.0the xft is: 10.0 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.010361111111111043the xft is: 10.020722222222222 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.020722222222222086the xft is: 10.041444444444444 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.03108333333333313the xft is: 10.062166666666666 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.04144444444444417the xft is: 10.082888888888888 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.051805555555555216the xft is: 10.10361111111111 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.06216666666666626the xft is: 10.124333333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.07252777777777819the xft is: 10.145055555555556 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.08288888888888923the xft is: 10.165777777777778 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.09325000000000028the xft is: 10.1865 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.10361111111111132the xft is: 10.207222222222223 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.11397222222222236the xft is: 10.227944444444445 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.1243333333333334the xft is: 10.248666666666667 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.13469444444444445the xft is: 10.269388888888889 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.1450555555555555the xft is: 10.290111111111111 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.15541666666666654the xft is: 10.310833333333333 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.16577777777777758the xft is: 10.331555555555555 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.17613888888888862the xft is: 10.352277777777777 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.18649999999999967the xft is: 10.373 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.1968611111111107the xft is: 10.393722222222221 the delta is: -10.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.0051856481481481415
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.2074259259259259the xft is: 9.585148148148148 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.19705462962962983the xft is: 9.60589074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.18668333333333376the xft is: 9.626633333333332 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.1763120370370368the xft is: 9.647375925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.16594074074074072the xft is: 9.668118518518519 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.15556944444444465the xft is: 9.68886111111111 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.14519814814814858the xft is: 9.709603703703703 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.13482685185185161the xft is: 9.730346296296297 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.12445555555555554the xft is: 9.751088888888889 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.11408425925925947the xft is: 9.771831481481481 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.1037129629629634the xft is: 9.792574074074073 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.09334166666666643the xft is: 9.813316666666667 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.08297037037037036the xft is: 9.83405925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.07259907407407429the xft is: 9.854801851851851 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.062227777777778215the xft is: 9.875544444444444 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.051856481481481254the xft is: 9.896287037037037 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.04148518518518518the xft is: 9.91702962962963 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.031113888888889107the xft is: 9.937772222222222 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.020742592592593034the xft is: 9.958514814814814 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.010371296296296073the xft is: 9.979257407407408 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.0the xft is: 10.0 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.010371296296296073the xft is: 10.020742592592592 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.020742592592593034the xft is: 10.041485185185186 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.031113888888889107the xft is: 10.062227777777778 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.04148518518518518the xft is: 10.08297037037037 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.051856481481481254the xft is: 10.103712962962963 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.062227777777778215the xft is: 10.124455555555556 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.07259907407407429the xft is: 10.145198148148149 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.08297037037037036the xft is: 10.16594074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.09334166666666643the xft is: 10.186683333333333 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.1037129629629634the xft is: 10.207425925925927 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.11408425925925947the xft is: 10.228168518518519 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.12445555555555554the xft is: 10.248911111111111 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.13482685185185161the xft is: 10.269653703703703 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.14519814814814858the xft is: 10.290396296296297 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.15556944444444465the xft is: 10.31113888888889 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.16594074074074072the xft is: 10.331881481481481 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.1763120370370368the xft is: 10.352624074074074 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.18668333333333376the xft is: 10.373366666666668 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.19705462962962983the xft is: 10.39410925925926 the delta is: 10.0
+30/04 16:42:12 FINE aw.DummyAgent|-0.0038465781588364915
+
+30/04 16:42:12 FINE aw.DummyAgent|MARTINOS outflight 5 ASKPRICE: 315.0 TIME: 528779
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 0 (Inflight 1)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>57</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>266.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>267.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 1 avg: 30.0 count: 60
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS inflight 1 ASKPRICE: 266.0 TIME: 518925
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 1 (Inflight 2)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>58</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>394.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>0.0000</lastClearPrice><lastClearTime>0</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 3 avg: 29.0 count: 61
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS inflight 2 ASKPRICE: 394.0 TIME: 518924
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 2 (Inflight 3)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>59</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>276.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>265.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 4 avg: 29.0 count: 62
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS inflight 3 ASKPRICE: 276.0 TIME: 518923
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 3 (Inflight 4)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>60</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>351.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>348.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 5 avg: 28.0 count: 63
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS inflight 4 ASKPRICE: 351.0 TIME: 518922
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 4 (Outflight 2)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>61</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>353.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 6 avg: 28.0 count: 64
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS outflight 2 ASKPRICE: 353.0 TIME: 518921
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 5 (Outflight 3)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>62</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>346.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>340.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 7 avg: 28.0 count: 65
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS outflight 3 ASKPRICE: 346.0 TIME: 518920
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 6 (Outflight 4)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>63</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>350.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>360.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 8 avg: 27.0 count: 66
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS outflight 4 ASKPRICE: 350.0 TIME: 518919
+30/04 16:42:21 FINEST aw.TACMessage|requesting quotes for auction 7 (Outflight 5)
+30/04 16:42:21 FINEST aw.TACMessage|XML out: '<getQuote><auctionID>64</auctionID></getQuote>'
+30/04 16:42:21 FINEST aw.TACMessage|XML in: '<?xml version="1.0"?><getQuote><lastAskPrice>320.0000</lastAskPrice><lastBidPrice>0.0000</lastBidPrice><lastQuoteTime>1367340140</lastQuoteTime><nextQuoteTime>1367340150</nextQuoteTime><lastClearPrice>305.0000</lastClearPrice><lastClearTime>1367340120</lastClearTime><finalClearTime>1367340660</finalClearTime><nextClearTime>0</nextClearTime><hypotheticalQuantityWon> </hypotheticalQuantityWon><auctionStatus>1</auctionStatus><commandStatus>0</commandStatus></getQuote>' responseTime: 8 avg: 27.0 count: 67
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.3904074074074071the xft is: 9.219185185185186 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.3708870370370372the xft is: 9.258225925925926 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.3513666666666664the xft is: 9.297266666666667 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.3318462962962965the xft is: 9.336307407407407 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.3123259259259257the xft is: 9.375348148148149 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.29280555555555576the xft is: 9.414388888888888 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.27328518518518496the xft is: 9.45342962962963 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.25376481481481505the xft is: 9.49247037037037 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.23424444444444426the xft is: 9.531511111111111 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.21472407407407434the xft is: 9.570551851851851 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.19520370370370355the xft is: 9.609592592592593 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.17568333333333364the xft is: 9.648633333333333 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.15616296296296284the xft is: 9.687674074074074 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.13664259259259293the xft is: 9.726714814814814 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.11712222222222213the xft is: 9.765755555555556 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.09760185185185222the xft is: 9.804796296296296 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.07808148148148142the xft is: 9.843837037037037 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.05856111111111151the xft is: 9.882877777777777 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.03904074074074071the xft is: 9.921918518518519 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: -0.0195203703703708the xft is: 9.960959259259258 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.0the xft is: 10.0 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.0195203703703708the xft is: 10.039040740740742 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.03904074074074071the xft is: 10.078081481481481 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.05856111111111151the xft is: 10.117122222222223 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.07808148148148142the xft is: 10.156162962962963 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.09760185185185222the xft is: 10.195203703703704 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.11712222222222213the xft is: 10.234244444444444 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.13664259259259293the xft is: 10.273285185185186 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.15616296296296284the xft is: 10.312325925925926 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.17568333333333364the xft is: 10.351366666666667 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.19520370370370355the xft is: 10.390407407407407 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.21472407407407434the xft is: 10.429448148148149 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.23424444444444426the xft is: 10.468488888888889 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.25376481481481505the xft is: 10.50752962962963 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.27328518518518496the xft is: 10.54657037037037 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.29280555555555576the xft is: 10.585611111111112 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.3123259259259257the xft is: 10.624651851851851 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.3318462962962965the xft is: 10.663692592592593 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.3513666666666664the xft is: 10.702733333333333 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 0 the centre is: 0.3708870370370372the xft is: 10.741774074074074 the delta is: -5.0
+30/04 16:42:21 FINE aw.DummyAgent|-0.009112943049256146
+
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.3906481481481485the xft is: 9.218703703703703 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.3711157407407404the xft is: 9.25776851851852 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.35158333333333314the xft is: 9.296833333333334 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.3320509259259259the xft is: 9.335898148148148 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.31251851851851864the xft is: 9.374962962962963 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.2929861111111114the xft is: 9.414027777777777 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.27345370370370325the xft is: 9.453092592592593 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.253921296296296the xft is: 9.492157407407408 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.23438888888888876the xft is: 9.531222222222222 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.2148564814814815the xft is: 9.570287037037037 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.19532407407407426the xft is: 9.609351851851851 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.175791666666667the xft is: 9.648416666666666 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.15625925925925888the xft is: 9.687481481481482 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.13672685185185163the xft is: 9.726546296296297 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.11719444444444438the xft is: 9.765611111111111 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.09766203703703713the xft is: 9.804675925925926 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.07812962962962988the xft is: 9.84374074074074 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.058597222222222634the xft is: 9.882805555555555 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.0390648148148145the xft is: 9.921870370370371 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: -0.01953240740740725the xft is: 9.960935185185186 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.0the xft is: 10.0 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.01953240740740725the xft is: 10.039064814814814 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.0390648148148145the xft is: 10.078129629629629 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.058597222222222634the xft is: 10.117194444444445 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.07812962962962988the xft is: 10.15625925925926 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.09766203703703713the xft is: 10.195324074074074 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.11719444444444438the xft is: 10.234388888888889 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.13672685185185163the xft is: 10.273453703703703 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.15625925925925888the xft is: 10.312518518518518 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.175791666666667the xft is: 10.351583333333334 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.19532407407407426the xft is: 10.390648148148149 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.2148564814814815the xft is: 10.429712962962963 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.23438888888888876the xft is: 10.468777777777778 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.253921296296296the xft is: 10.507842592592592 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.27345370370370325the xft is: 10.546907407407407 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.2929861111111114the xft is: 10.585972222222223 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.31251851851851864the xft is: 10.625037037037037 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.3320509259259259the xft is: 10.664101851851852 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.35158333333333314the xft is: 10.703166666666666 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 1 the centre is: 0.3711157407407404the xft is: 10.74223148148148 the delta is: 2.0
+30/04 16:42:21 FINE aw.DummyAgent|-0.007136312581449028
+
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.3909444444444441the xft is: 9.218111111111112 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.37139722222222193the xft is: 9.257205555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.3518499999999998the xft is: 9.2963 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.3323027777777776the xft is: 9.335394444444445 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.31275555555555545the xft is: 9.374488888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.2932083333333333the xft is: 9.413583333333333 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.27366111111111113the xft is: 9.452677777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.254113888888889the xft is: 9.491772222222222 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.2345666666666668the xft is: 9.530866666666666 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.21501944444444465the xft is: 9.56996111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.1954722222222225the xft is: 9.609055555555555 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.17592500000000033the xft is: 9.64815 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.15637777777777817the xft is: 9.687244444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.13683055555555512the xft is: 9.72633888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.11728333333333296the xft is: 9.765433333333334 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.0977361111111108the xft is: 9.804527777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.07818888888888864the xft is: 9.843622222222223 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.05864166666666648the xft is: 9.882716666666667 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.03909444444444432the xft is: 9.921811111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: -0.01954722222222216the xft is: 9.960905555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.0the xft is: 10.0 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.01954722222222216the xft is: 10.039094444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.03909444444444432the xft is: 10.078188888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.05864166666666648the xft is: 10.117283333333333 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.07818888888888864the xft is: 10.156377777777777 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.0977361111111108the xft is: 10.195472222222222 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.11728333333333296the xft is: 10.234566666666666 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.13683055555555512the xft is: 10.27366111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.15637777777777817the xft is: 10.312755555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.17592500000000033the xft is: 10.35185 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.1954722222222225the xft is: 10.390944444444445 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.21501944444444465the xft is: 10.43003888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.2345666666666668the xft is: 10.469133333333334 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.254113888888889the xft is: 10.508227777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.27366111111111113the xft is: 10.547322222222222 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.2932083333333333the xft is: 10.586416666666667 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.31275555555555545the xft is: 10.625511111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.3323027777777776the xft is: 10.664605555555555 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.3518499999999998the xft is: 10.7037 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 2 the centre is: 0.37139722222222193the xft is: 10.742794444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|-0.004278570561152668
+
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.39111111111111097the xft is: 9.217777777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.3715555555555552the xft is: 9.25688888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.3520000000000003the xft is: 9.296 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.33244444444444454the xft is: 9.335111111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.31288888888888877the xft is: 9.374222222222222 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.293333333333333the xft is: 9.413333333333334 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.2737777777777781the xft is: 9.452444444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.25422222222222235the xft is: 9.491555555555555 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.23466666666666658the xft is: 9.530666666666667 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.2151111111111108the xft is: 9.569777777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.19555555555555593the xft is: 9.608888888888888 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.17600000000000016the xft is: 9.648 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.15644444444444439the xft is: 9.687111111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.13688888888888862the xft is: 9.726222222222223 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.11733333333333373the xft is: 9.765333333333333 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.09777777777777796the xft is: 9.804444444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.07822222222222219the xft is: 9.843555555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.05866666666666642the xft is: 9.882666666666667 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.03911111111111154the xft is: 9.921777777777777 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: -0.01955555555555577the xft is: 9.960888888888888 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.0the xft is: 10.0 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.01955555555555577the xft is: 10.039111111111112 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.03911111111111154the xft is: 10.078222222222223 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.05866666666666642the xft is: 10.117333333333333 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.07822222222222219the xft is: 10.156444444444444 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.09777777777777796the xft is: 10.195555555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.11733333333333373the xft is: 10.234666666666667 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.13688888888888862the xft is: 10.273777777777777 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.15644444444444439the xft is: 10.312888888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.17600000000000016the xft is: 10.352 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.19555555555555593the xft is: 10.391111111111112 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.2151111111111108the xft is: 10.430222222222222 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.23466666666666658the xft is: 10.469333333333333 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.25422222222222235the xft is: 10.508444444444445 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.2737777777777781the xft is: 10.547555555555556 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.293333333333333the xft is: 10.586666666666666 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.31288888888888877the xft is: 10.625777777777778 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.33244444444444454the xft is: 10.664888888888889 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.3520000000000003the xft is: 10.704 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 3 the centre is: 0.3715555555555552the xft is: 10.74311111111111 the delta is: 1.0
+30/04 16:42:21 FINE aw.DummyAgent|-0.005021649053269262
+
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.39127777777777784the xft is: 9.217444444444444 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.37171388888888846the xft is: 9.256572222222223 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.35214999999999996the xft is: 9.2957 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.33258611111111147the xft is: 9.334827777777777 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.3130222222222221the xft is: 9.373955555555556 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.2934583333333336the xft is: 9.413083333333333 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.2738944444444442the xft is: 9.452211111111112 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.2543305555555557the xft is: 9.491338888888889 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.23476666666666635the xft is: 9.530466666666667 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.21520277777777785the xft is: 9.569594444444444 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.19563888888888847the xft is: 9.608722222222223 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.17607499999999998the xft is: 9.64785 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.1565111111111115the xft is: 9.686977777777777 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.1369472222222221the xft is: 9.726105555555556 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.11738333333333362the xft is: 9.765233333333333 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.09781944444444424the xft is: 9.804361111111112 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.07825555555555574the xft is: 9.843488888888889 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.058691666666666364the xft is: 9.882616666666667 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.03912777777777787the xft is: 9.921744444444444 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: -0.019563888888888492the xft is: 9.960872222222223 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.0the xft is: 10.0 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.019563888888888492the xft is: 10.039127777777777 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.03912777777777787the xft is: 10.078255555555556 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.058691666666666364the xft is: 10.117383333333333 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.07825555555555574the xft is: 10.156511111111111 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.09781944444444424the xft is: 10.195638888888888 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.11738333333333362the xft is: 10.234766666666667 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.1369472222222221the xft is: 10.273894444444444 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.1565111111111115the xft is: 10.313022222222223 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.17607499999999998the xft is: 10.35215 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.19563888888888847the xft is: 10.391277777777777 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.21520277777777785the xft is: 10.430405555555556 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.23476666666666635the xft is: 10.469533333333333 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.2543305555555557the xft is: 10.508661111111111 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.2738944444444442the xft is: 10.547788888888888 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.2934583333333336the xft is: 10.586916666666667 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.3130222222222221the xft is: 10.626044444444444 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.33258611111111147the xft is: 10.665172222222223 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.35214999999999996the xft is: 10.7043 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 4 the centre is: 0.37171388888888846the xft is: 10.743427777777777 the delta is: 3.0
+30/04 16:42:21 FINE aw.DummyAgent|-0.005868397314090409
+
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.39142592592592607the xft is: 9.217148148148148 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.37185462962962923the xft is: 9.256290740740742 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.3522833333333333the xft is: 9.295433333333333 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.33271203703703733the xft is: 9.334575925925925 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.3131407407407405the xft is: 9.373718518518519 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.29356944444444455the xft is: 9.412861111111111 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.2739981481481486the xft is: 9.452003703703703 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.25442685185185177the xft is: 9.491146296296296 the delta is: 4.0
+30/04 16:42:21 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.23485555555555582the xft is: 9.530288888888888 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.21528425925925898the xft is: 9.569431481481482 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.19571296296296303the xft is: 9.608574074074074 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.1761416666666662the xft is: 9.647716666666668 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.15657037037037025the xft is: 9.68685925925926 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.1369990740740743the xft is: 9.726001851851851 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.11742777777777746the xft is: 9.765144444444445 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.09785648148148152the xft is: 9.804287037037037 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.07828518518518557the xft is: 9.843429629629629 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.05871388888888873the xft is: 9.882572222222223 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.039142592592592784the xft is: 9.921714814814814 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: -0.019571296296295948the xft is: 9.960857407407408 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.0the xft is: 10.0 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.019571296296295948the xft is: 10.039142592592592 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.039142592592592784the xft is: 10.078285185185186 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.05871388888888873the xft is: 10.117427777777777 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.07828518518518557the xft is: 10.156570370370371 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.09785648148148152the xft is: 10.195712962962963 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.11742777777777746the xft is: 10.234855555555555 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.1369990740740743the xft is: 10.273998148148149 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.15657037037037025the xft is: 10.31314074074074 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.1761416666666662the xft is: 10.352283333333332 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.19571296296296303the xft is: 10.391425925925926 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.21528425925925898the xft is: 10.430568518518518 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.23485555555555582the xft is: 10.469711111111112 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.25442685185185177the xft is: 10.508853703703704 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.2739981481481486the xft is: 10.547996296296297 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.29356944444444455the xft is: 10.587138888888889 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.3131407407407405the xft is: 10.626281481481481 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.33271203703703733the xft is: 10.665424074074075 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.3522833333333333the xft is: 10.704566666666667 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 5 the centre is: 0.37185462962962923the xft is: 10.743709259259258 the delta is: 4.0
+30/04 16:42:22 FINE aw.DummyAgent|-0.0035020534893123872
+
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.39162962962962933the xft is: 9.216740740740741 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.37204814814814835the xft is: 9.255903703703703 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.3524666666666665the xft is: 9.295066666666667 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.3328851851851855the xft is: 9.334229629629629 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.31330370370370364the xft is: 9.373392592592593 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.2937222222222218the xft is: 9.412555555555556 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.2741407407407408the xft is: 9.451718518518518 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.25455925925925893the xft is: 9.490881481481482 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.23497777777777795the xft is: 9.530044444444444 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.21539629629629609the xft is: 9.569207407407408 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.1958148148148151the xft is: 9.60837037037037 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.17623333333333324the xft is: 9.647533333333334 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.15665185185185226the xft is: 9.686696296296295 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.1370703703703704the xft is: 9.72585925925926 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.11748888888888853the xft is: 9.765022222222223 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.09790740740740755the xft is: 9.804185185185185 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.07832592592592569the xft is: 9.843348148148149 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.05874444444444471the xft is: 9.88251111111111 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.039162962962962844the xft is: 9.921674074074074 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: -0.019581481481481866the xft is: 9.960837037037036 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.0the xft is: 10.0 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.019581481481481866the xft is: 10.039162962962964 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.039162962962962844the xft is: 10.078325925925926 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.05874444444444471the xft is: 10.11748888888889 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.07832592592592569the xft is: 10.156651851851851 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.09790740740740755the xft is: 10.195814814814815 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.11748888888888853the xft is: 10.234977777777777 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.1370703703703704the xft is: 10.27414074074074 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.15665185185185226the xft is: 10.313303703703705 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.17623333333333324the xft is: 10.352466666666666 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.1958148148148151the xft is: 10.39162962962963 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.21539629629629609the xft is: 10.430792592592592 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.23497777777777795the xft is: 10.469955555555556 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.25455925925925893the xft is: 10.509118518518518 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.2741407407407408the xft is: 10.548281481481482 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.2937222222222218the xft is: 10.587444444444444 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.31330370370370364the xft is: 10.626607407407407 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.3328851851851855the xft is: 10.665770370370371 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.3524666666666665the xft is: 10.704933333333333 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 6 the centre is: 0.37204814814814835the xft is: 10.744096296296297 the delta is: 0.0
+30/04 16:42:22 FINE aw.DummyAgent|-0.009621442706442157
+
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.3917962962962962the xft is: 9.216407407407408 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.3722064814814816the xft is: 9.255587037037037 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.352616666666667the xft is: 9.294766666666666 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.33302685185185155the xft is: 9.333946296296297 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.31343703703703696the xft is: 9.373125925925926 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.29384722222222237the xft is: 9.412305555555555 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.2742574074074078the xft is: 9.451485185185184 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.2546675925925923the xft is: 9.490664814814815 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.23507777777777772the xft is: 9.529844444444445 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.21548796296296313the xft is: 9.569024074074074 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.19589814814814854the xft is: 9.608203703703703 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.17630833333333307the xft is: 9.647383333333334 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.15671851851851848the xft is: 9.686562962962963 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.1371287037037039the xft is: 9.725742592592592 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.1175388888888893the xft is: 9.764922222222221 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.09794907407407383the xft is: 9.804101851851852 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.07835925925925924the xft is: 9.843281481481482 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.05876944444444465the xft is: 9.88246111111111 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.039179629629630064the xft is: 9.92164074074074 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: -0.019589814814814588the xft is: 9.96082037037037 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.0the xft is: 10.0 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.019589814814814588the xft is: 10.03917962962963 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.039179629629630064the xft is: 10.07835925925926 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.05876944444444465the xft is: 10.11753888888889 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.07835925925925924the xft is: 10.156718518518518 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.09794907407407383the xft is: 10.195898148148148 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.1175388888888893the xft is: 10.235077777777779 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.1371287037037039the xft is: 10.274257407407408 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.15671851851851848the xft is: 10.313437037037037 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.17630833333333307the xft is: 10.352616666666666 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.19589814814814854the xft is: 10.391796296296297 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.21548796296296313the xft is: 10.430975925925926 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.23507777777777772the xft is: 10.470155555555555 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.2546675925925923the xft is: 10.509335185185185 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.2742574074074078the xft is: 10.548514814814816 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.29384722222222237the xft is: 10.587694444444445 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.31343703703703696the xft is: 10.626874074074074 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.33302685185185155the xft is: 10.666053703703703 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.352616666666667the xft is: 10.705233333333334 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS BAYES TEST: flight: 7 the centre is: 0.3722064814814816the xft is: 10.744412962962963 the delta is: 5.0
+30/04 16:42:22 FINE aw.DummyAgent|-0.002094614512746012
+
+30/04 16:42:22 FINE aw.DummyAgent|MARTINOS outflight 5 ASKPRICE: 320.0 TIME: 518835
+30/04 16:42:26 FINE aw.TACAgent|performing connection reset
+30/04 16:42:26 FINE aw.TACAgent|Game log complete
+************************************************************
+* Game log complete
+************************************************************
+
+
