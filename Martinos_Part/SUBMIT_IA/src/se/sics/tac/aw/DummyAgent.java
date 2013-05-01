@@ -20,7 +20,7 @@
  * Author  : Joakim Eriksson, Niclas Finne, Sverker Janson
  * Created : 23 April, 2002
  * Updated : $Date: 2005/06/07 19:06:16 $
- *	     $Revision: 1.1 $
+ *	    $Revision: 1.1 $
  * ---------------------------------------------------------
  * DummyAgent is a simplest possible agent for TAC. It uses
  * the TACAgent agent ware to interact with the TAC server.
@@ -165,75 +165,87 @@
 package se.sics.tac.aw;
 
 import se.sics.tac.util.ArgEnumerator;
+
+import java.io.File;
 import java.util.logging.*;
 import java.util.*;
 
 public class DummyAgent extends AgentImpl {
 
-	private static final Logger log = Logger.getLogger(DummyAgent.class.getName());
+	private static final Logger log = Logger.getLogger(DummyAgent.class
+			.getName());
 	private static final boolean DEBUG = false;
 	private float[] prices;
 
 	private boolean dayChangingAlert;
-	//the preference of customer 1-8 in of the day they want to fly in
+	// the preference of customer 1-8 in of the day they want to fly in
 	private int[] customerInPreference;
-	//the preference of customer 1-8 in of the day they want to fly out
+	// the preference of customer 1-8 in of the day they want to fly out
 	private int[] customerOutPreference;
-	//the most probable day that the customer will fly in. This is initialized to the customerInPreference
-	//and it changes if the hotels cannot be secured.
+	// the most probable day that the customer will fly in. This is initialized
+	// to the customerInPreference
+	// and it changes if the hotels cannot be secured.
 	private int[] probableNightIn;
-	//the most probable day that the customer will fly out. This is initialized to the customerOutPreference
-	//and it changes if the hotels cannot be secured.
+	// the most probable day that the customer will fly out. This is initialized
+	// to the customerOutPreference
+	// and it changes if the hotels cannot be secured.
 	private int[] probableNightOut;
-	
-	
-	
-	//NOT CURRENTLY BEING USED VARIABLES
-	//this variable is not used at the moment.
+	// NOT CURRENTLY BEING USED VARIABLES
+	// this variable is not used at the moment.
 	private int[] information;
-	//variable not used at the moment.
+	// variable not used at the moment.
 	private long timeUpdate;
-	
-	//this is a variable that stores the hotel preferences for customer 0-8 respectively.True are the expensive
-	//hotels and false otherwise.
+	// this is a variable that stores the hotel preferences for customer 0-8
+	// respectively.True are the expensive
+	// hotels and false otherwise.
 	private boolean[] hotelPreference;
-	
 
-	
-	
-	
 	// FLIGHT SPECIFIC VARIABLES INCOMING.
-	
-	
-	
-	
-
-	// a variable that contains the probability of that biases -10 to 30. initially it has value 1/40 but
+	File file = new File("Martinos_Logger1.txt");
+	Logging logg = new Logging("Martinos_Logger1.txt");
+	// a variable that contains the probability of that biases -10 to 30.
+	// initially it has value 1/40 but
 	// gradually
 	// it is updated with the bayesian probabilities of perturbation.
 	double[][] flight_hiddenxf = new double[8][40];
-	// the difference between flight x and flight x-1. It is initially zero, and it is also zero for the 1st
+	// the difference between flight x and flight x-1. It is initially zero, and
+	// it is also zero for the 1st
 	// update.
 	// it is only updated for the 2nd update (20 seconds in the game onwards).
 	double[] delta = new double[8];
-	// the price of the previous flight. This is updated on every quote update to contain the prices of the
+	// the price of the previous flight. This is updated on every quote update
+	// to contain the prices of the
 	// previous
-	// flight. It is useful since to compute the difference between flight prices we need the current update
+	// flight. It is useful since to compute the difference between flight
+	// prices we need the current update
 	// of the
-	// price with the .getAskPrice method as well as the previous value that will be used to compute the delta
+	// price with the .getAskPrice method as well as the previous value that
+	// will be used to compute the delta
 	// value.
 	double[] previousFlightPrice = new double[8];
-	///this will be a variable that will signify the updates of the flights. if all the variables are true then
-	//all quotes are updated and we calculate the baysian  projection.
+	// /this will be a variable that will signify the updates of the flights. if
+	// all the variables are true then
+	// all quotes are updated and we calculate the baysian projection.
 	boolean[] flight_updates = new boolean[8];
 
-	public DummyAgent() {
+	// Starting 8 tickets
+	boolean start8tickets = false;
 
+	public DummyAgent() {
+		// logger
+		int ii = 1;
+		String name = "Martinos_Logger" + ii + ".txt";
+		while ((file.length() > 100) && ii < 100) {
+			name = "Martinos_Logger" + ii + ".txt";
+			file = new File(name);
+			ii++;
+		}
+		logg = new Logging(name);
 		hotelPreference = new boolean[8];
 		customerInPreference = new int[8];
 		customerOutPreference = new int[8];
 		probableNightOut = new int[8];
-		probableNightIn = new int [8];
+		probableNightIn = new int[8];
 		information = new int[28];
 		dayChangingAlert = false;
 		timeUpdate = 540000L;
@@ -242,10 +254,12 @@ public class DummyAgent extends AgentImpl {
 		for (int i = 0; i < 8; i++) {
 			// initially delta and previousFlight is 0 value.
 			delta[i] = 0;
-			previousFlightPrice[i] = 0;
+			previousFlightPrice[i] = 0d;
 			flight_updates[i] = false;
+			start8tickets = false;
 			for (int j = 0; j < 40; j++) {
-				// the chance for the hidden variable at start of the game is equal.
+				// the chance for the hidden variable at start of the game is
+				// equal.
 				flight_hiddenxf[i][j] = 0.025d;
 
 			}
@@ -258,112 +272,8 @@ public class DummyAgent extends AgentImpl {
 	}
 
 	public void quoteUpdated(Quote quote) {
-		// will hold the type of the auction
-		String type = "";
-		// will hold the day that the specified auction is for
-		String day = "";
 
-		//the following code is used for debugging purposes to log details in logger.
-		//auctions with id 0-4 are for inflights on days 1-4 .
-		if (quote.getAuction() == 0) {
-			type = "inflight";
-			day = "1";
-		} else if (quote.getAuction() == 1) {
-			type = "inflight";
-			day = "2";
-		} else if (quote.getAuction() == 2) {
-			type = "inflight";
-			day = "3";
-		} else if (quote.getAuction() == 3) {
-			type = "inflight";
-			day = "4";
-		} 
-		//auctions with id 4-7 are for outflights with days 2-5 respectively
-		else if (quote.getAuction() == 4) {
-			type = "outflight";
-			day = "2";
-		} else if (quote.getAuction() == 5) {
-			type = "outflight";
-			day = "3";
-		} else if (quote.getAuction() == 6) {
-			type = "outflight";
-			day = "4";
-		} else if (quote.getAuction() == 7) {
-			type = "outflight";
-			day = "5";
-		} 
-		//auctions with id 8-11 are for cheap hotels with days 1-4 respectively
-		else if (quote.getAuction() == 8) {
-			type = "cheapHotel";
-			day = "1";
-		} else if (quote.getAuction() == 9) {
-			type = "cheapHotel";
-			day = "2";
-		} else if (quote.getAuction() == 10) {
-			type = "cheapHotel";
-			day = "3";
-		} else if (quote.getAuction() == 11) {
-			type = "cheapHotel";
-			day = "4";
-		} 
-		//auctions with id 12-15 are for expensive hotels and days 1-4 respectively.
-		else if (quote.getAuction() == 12) {
-			type = "expensiveHotel";
-			day = "1";
-		} else if (quote.getAuction() == 13) {
-			type = "expensiveHotel";
-			day = "2";
-		} else if (quote.getAuction() == 14) {
-			type = "expensiveHotel";
-			day = "3";
-		} else if (quote.getAuction() == 15) {
-			type = "expensiveHotel";
-			day = "4";
-		}
-		//auctions with id 16-19 are for entertainemnt -> ALIGATOR for days 1-4 respectively
-		else if (quote.getAuction() == 16) {
-			type = "aligator";
-			day = "1";
-		} else if (quote.getAuction() == 17) {
-			type = "aligator";
-			day = "2";
-		} else if (quote.getAuction() == 18) {
-			type = "aligator";
-			day = "3";
-		} else if (quote.getAuction() == 19) {
-			type = "aligator";
-			day = "4";
-		} 
-		//auctions with id 20-24 are for entertainement -> AMUZEMENT days 1-4 respectively
-		else if (quote.getAuction() == 20) {
-			type = "amuzement";
-			day = "1";
-		} else if (quote.getAuction() == 21) {
-			type = "amuzement";
-			day = "2";
-		} else if (quote.getAuction() == 22) {
-			type = "amuzement";
-			day = "3";
-		} else if (quote.getAuction() == 23) {
-			type = "amuzement";
-			day = "4";
-		} 
-		//auctions with id 20-24 are for entertainement -> MUSEUM days 1-4 respectively.
-		else if (quote.getAuction() == 24) {
-			type = "museum";
-			day = "1";
-		} else if (quote.getAuction() == 25) {
-			type = "museum";
-			day = "2";
-		} else if (quote.getAuction() == 26) {
-			type = "museum";
-			day = "3";
-		} else if (quote.getAuction() == 27) {
-			type = "museum";
-			day = "4";
-		}
-
-		//if the auctions are for flights then:
+		// if the auctions are for flights then:
 		if (quote.getAuction() < 8) {
 			int auctionID = quote.getAuction();
 			// if this is the 1st 10 seconds of the game.
@@ -373,125 +283,161 @@ public class DummyAgent extends AgentImpl {
 			}
 			// if there is a previous price, hence the game is >10s life.
 			else {
-				// update the difference in value for flight 1 with the previous flight at x-1.
-				delta[auctionID] = quote.getAskPrice() - previousFlightPrice[auctionID];
+				// update the difference in value for flight 1 with the previous
+				// flight at x-1.
+				delta[auctionID] = quote.getAskPrice()
+						- previousFlightPrice[auctionID];
 				// update the current "old" price of the flight
 				previousFlightPrice[auctionID] = quote.getAskPrice();
-				//if all the flight prices have been updated and the deltas have been computed then
-				//set a flag to true that will be used to run bayesian probability update.
+				// if all the flight prices have been updated and the deltas
+				// have been computed then
+				// set a flag to true that will be used to run bayesian
+				// probability update.
 				flight_updates[auctionID] = true;
+				logg.log(delta[auctionID] + "\n");
 			}
+
 			boolean update = true;
-			int counter = 0; 
-			//a check to all 8 spots in the array
-			while (counter<8 && update){
+			int counter = 0;
+			// a check to all 8 spots in the array
+			while (counter < 8 && update) {
 				update = flight_updates[counter];
 				counter++;
 			}
-			//if all 8 flights are updated (true in all 8 spots in the array) then we calculate the
-			//updated bayesian variables:
-			if(update){
-				String prediction = "MARTINOS MONTE CARLO for  id : ";
-				for(int i =0;i<8;i++){
-					flight_updates[i]=false;
-					baysianProb(delta[i], i);						
-					prediction += i + "\n";
-					log.fine(monteCarloSimulation(i) +"\n");
-					prediction = "MARTINOS MONTE CARLO for  id : ";
+			// if all 8 flights are updated (true in all 8 spots in the array)
+			// then we calculate the
+			// updated bayesian variables:
+			if (update) {
+				
+				if (!start8tickets) {
+					start8tickets = true;
+					int[] sum_DayIn = { 0, 0, 0, 0 };
+					int[] sum_DayOut = { 0, 0, 0, 0 };
+					for (int j = 0; j < 8; j++) {
+						System.out.println(sum_DayIn[probableNightIn[j] - 1]++);
+						System.out.println(sum_DayOut[probableNightOut[j] -2]++);
+					}
+					for (int i = 0; i < 8; i++) {// for all the customers we buy
+						// either the in or the
+						// outflight
+						int x = 0;
+						x = sum_DayIn[probableNightIn[i] - 1];
+						if (x > sum_DayOut[probableNightOut[i] - 2]) {
+
+							Bid bid = new Bid(probableNightIn[i] - 1);//correct 0-4
+							bid.addBidPoint(1, (float) previousFlightPrice[probableNightIn[i] - 1] +1);
+							agent.submitBid(bid);
+							sum_DayIn[probableNightIn[i] - 1]--;
+						} else {
+							Bid bid = new Bid(probableNightOut[i]+2 ); //PNO is 2-5 hence convert to 4-7 for auction id
+							bid.addBidPoint(1, (float) previousFlightPrice[probableNightOut[i]+2] +1); //PFP is 8 slots we need 4-7 hence i+2 
+							agent.submitBid(bid);//correct
+							sum_DayOut[probableNightOut[i]-2]--;//correct
+
+						}
+					}
 				}
 				
+
+					for (int i = 0; i < 8; i++) {
+
+						flight_updates[i] = false;
+						baysianProb(delta[i], i);
+						logg.log(monteCarloSimulation(i,
+								(double) (agent.getGameTime() + 10000) / 540000)
+								+ "\n");
+					}
 			}
-			
-		}
-		
-		
-		//this is most probably depriciated by now as i figure that each part will use his own variables.
-		updatePrices();
-		
-		if (timeUpdate - agent.getGameTimeLeft() > 10000) {
-			timeUpdate = agent.getGameTimeLeft(); // updates the time till the next 10 seconds in our game.
 		}
 
-		
-		//updated for flights only
-		if(quote.getAuction()<8){
-		//if the ask price of the updated quote is not zero then log the update.
-		if (!(quote.getAskPrice() == 0f)) {
-			
-			log.fine("MARTINOS " + type + " " + day + " ASKPRICE: " + quote.getAskPrice() + " TIME: "
-					+ agent.getGameTimeLeft());
-		}
-		//if the auction has bid price and it is not zero then log the update.
-		if (!(quote.getBidPrice() == 0f)) {
-			log.fine("MARTINOS " + type + " " + day + " BIDPRICE: " + quote.getBidPrice() + " TIME: "
-					+ agent.getGameTimeLeft());
-		}
-		}
 
-		int auction = quote.getAuction();
-		int auctionCategory = agent.getAuctionCategory(auction);
-		if (auctionCategory == TACAgent.CAT_HOTEL) {
-			int alloc = agent.getAllocation(auction);
-			if (alloc > 0 && quote.hasHQW(agent.getBid(auction)) && quote.getHQW() < alloc) {
-				Bid bid = new Bid(auction);
-				// Can not own anything in hotel auctions...
-				prices[auction] = quote.getAskPrice() + 50;
-				bid.addBidPoint(alloc, prices[auction]);
-				if (DEBUG) {
-					log.finest("submitting bid with alloc=" + agent.getAllocation(auction) + " own="
-							+ agent.getOwn(auction));
+				
+			
+		
+		// this is most probably depriciated by now as i figure that each part
+				// will use his own variables.
+				updatePrices();
+				if (timeUpdate - agent.getGameTimeLeft() > 10000) {
+					timeUpdate = agent.getGameTimeLeft(); // updates the time till the
+															// next 10 seconds in our
+															// game.
 				}
-				agent.submitBid(bid);
-			}
-		} else if (auctionCategory == TACAgent.CAT_ENTERTAINMENT) {
-			int alloc = agent.getAllocation(auction) - agent.getOwn(auction);
-			if (alloc != 0) {
-				Bid bid = new Bid(auction);
-				if (alloc < 0)
-					prices[auction] = 200f - (agent.getGameTime() * 120f) / 720000;
-				else
-					prices[auction] = 50f + (agent.getGameTime() * 100f) / 720000;
-				bid.addBidPoint(alloc, prices[auction]);
-				if (DEBUG) {
-					log.finest("submitting bid with alloc=" + agent.getAllocation(auction) + " own="
-							+ agent.getOwn(auction));
+
+				int auction = quote.getAuction();
+				int auctionCategory = agent.getAuctionCategory(auction);
+				if (auctionCategory == TACAgent.CAT_HOTEL) {
+					int alloc = agent.getAllocation(auction);
+					if (alloc > 0 && quote.hasHQW(agent.getBid(auction))
+							&& quote.getHQW() < alloc) {
+						Bid bid = new Bid(auction);
+						// Can not own anything in hotel auctions...
+						prices[auction] = quote.getAskPrice() + 50;
+						bid.addBidPoint(alloc, prices[auction]);
+						if (DEBUG) {
+							log.finest("submitting bid with alloc="
+									+ agent.getAllocation(auction) + " own="
+									+ agent.getOwn(auction));
+						}
+						agent.submitBid(bid);
+					}
+				} else if (auctionCategory == TACAgent.CAT_ENTERTAINMENT) {
+					int alloc = agent.getAllocation(auction) - agent.getOwn(auction);
+					if (alloc != 0) {
+						Bid bid = new Bid(auction);
+						if (alloc < 0)
+							prices[auction] = 200f - (agent.getGameTime() * 120f) / 720000;
+						else
+							prices[auction] = 50f + (agent.getGameTime() * 100f) / 720000;
+						bid.addBidPoint(alloc, prices[auction]);
+						if (DEBUG) {
+							log.finest("submitting bid with alloc="
+									+ agent.getAllocation(auction) + " own="
+									+ agent.getOwn(auction));
+						}
+						agent.submitBid(bid);
+					}
 				}
-				agent.submitBid(bid);
 			}
-		}
-	}
+	
+			
 
 	/**
 	 * 
-	 * @param delta the difference in price between a flight and the previous one
-	 * @param flightNumber numbers 1-4 mark the inflights days 1-4. numbers 5-8 marks ouflights on day 2-5.
+	 * @param delta
+	 *            the difference in price between a flight and the previous one
+	 * @param flightNumber
+	 *            numbers 1-4 mark the inflights days 1-4. numbers 5-8 marks
+	 *            ouflights on day 2-5.
 	 */
+	// mistake found. xf=/ xft. hence it all depends on XFT. you cannot check
+	// delta less than xft or in fact,
+	// seperate out the i's.
 	public void baysianProb(double delta, int flightNumber) {
-		double time = (double) agent.getGameTime()/540000;
+		double time = (double) agent.getGameTime() / 540000;
 		double addition = 0f;
 
 		for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
 			double xf = i - 10;
-			double xft = ((xf - 10) * time) + 10; 
+			double xft = ((xf - 10) * time) + 10;
 			if (xft < 0) {
 				double centre = (xft + 10) / 2;
 				double intermediate = Math.abs(delta - centre);
 				intermediate = intermediate / Math.abs(xft - 10d);
 				intermediate = 1d - intermediate;
 
-				// if the delta is greater than 10 or less than xft then it is certain that
-				// a hidden variable of less than 0 was not selected hence we penalize with 0.5.
+				// if the delta is greater than 10 or less than xft then it is
+				// certain that
+				// a hidden variable of less than 0 was not selected hence we
+				// penalize with 0.5.
 				if (delta < xft || delta > 10) {
 					intermediate = 0.5;
 				}
 				intermediate = intermediate * flight_hiddenxf[flightNumber][i];
 				flight_hiddenxf[flightNumber][i] = intermediate;
 				addition += intermediate;
-				
-				log.fine("MARTINOS BAYES TEST: flight: " + flightNumber + " the centre is: " + centre + "the xft is: "  + xft + " the delta is: " + delta);
 			} else if (xft == 0) {
 				double intermediate = Math.abs(delta);
-				intermediate = intermediate / (20d); //the centre is at 0.
+				intermediate = intermediate / (20d); // the centre is at 0.
 				intermediate = 1d - intermediate;
 				if (delta < -10 || delta > 10) {
 					intermediate = 0.5; // penalization factor of 0.5.
@@ -499,55 +445,49 @@ public class DummyAgent extends AgentImpl {
 				intermediate = intermediate * flight_hiddenxf[flightNumber][i];
 				flight_hiddenxf[flightNumber][i] = intermediate;
 				addition += intermediate;
-				
 			} else {
 				double centre = (-10 + xft) / 2;
 				double intermediate = Math.abs(delta - centre);
 				intermediate = intermediate / Math.abs(-10d - xft);
 				intermediate = 1d - intermediate;
 
-				// if the delta is greater than the actual xf(t) then we penalize that percentage by a .5%.
+				// if the delta is greater than the actual xf(t) then we
+				// penalize that percentage by a .5%.
 				if (delta < -10 || delta > xft) {
-					intermediate = 0.5; // the penalizing factor for not picking values in XF is 0.5.
+					intermediate = 0.5; // the penalizing factor for not picking
+										// values in XF is 0.5.
 				}
 				intermediate = intermediate * flight_hiddenxf[flightNumber][i];
 				flight_hiddenxf[flightNumber][i] = intermediate;
 				addition += intermediate;
-				
-				log.fine("MARTINOS BAYES TEST: flight: " + flightNumber + " the centre is: " + centre + "the xft is: "  + xft + " the delta is: " + delta);
 			}
 		}
 
-			addition = 1 / addition;
-			for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
-				flight_hiddenxf[flightNumber][i] = flight_hiddenxf[flightNumber][i] * addition;
-			}
-
+		addition = 1 / addition;
+		for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
+			flight_hiddenxf[flightNumber][i] = flight_hiddenxf[flightNumber][i]
+					* addition;
 		}
-	
-	public double monteCarloSimulation(int flightNumber) {
-		double time = (double) agent.getGameTime()/540000;
+	}
+
+	public double monteCarloSimulation(int flightNumber, double time) {
 		double prediction = 0f;
 		for (int i = 0; i < flight_hiddenxf[flightNumber].length; i++) {
 			double xf = i - 10;
 			double xft = ((xf - 10) * time) + 10;
-			
-			if(xft<0){
-				prediction += ((xft+10d)/2)*flight_hiddenxf[flightNumber][i];
-			}
-			else if(xft==0){
-				prediction+= 0;
-			}
-			else{
-				prediction += ((-10d + xft)/2)*flight_hiddenxf[flightNumber][i];
+			if (xft < 0) {
+				prediction += ((xft + 10d) / 2)
+						* flight_hiddenxf[flightNumber][i];
+			} else if (xft == 0) {
+				prediction += 0;
+			} else {
+				prediction += ((-10d + xft) / 2)
+						* flight_hiddenxf[flightNumber][i];
 			}
 		}
 		return prediction;
 
 	}
-	
-	
-	
 
 	// method to edit
 	public void quoteUpdated(int auctionCategory) {
@@ -571,13 +511,35 @@ public class DummyAgent extends AgentImpl {
 	}
 
 	public void bidError(Bid bid, int status) {
-		// log.warning("Bid Error in auction " + bid.getAuction() + ": " + status
+		// log.warning("Bid Error in auction " + bid.getAuction() + ": " +
+		// status
 		// + " (" + agent.commandStatusToString(status) + ')');
 	}
 
 	public void gameStarted() {
-		// log.fine("Game " + agent.getGameID() + " started!");
+		hotelPreference = new boolean[8];
+		customerInPreference = new int[8];
+		customerOutPreference = new int[8];
+		probableNightOut = new int[8];
+		probableNightIn = new int[8];
+		information = new int[28];
+		dayChangingAlert = false;
+		timeUpdate = 540000L;
 
+		// flight variable initializations
+		for (int i = 0; i < 8; i++) {
+			// initially delta and previousFlight is 0 value.
+			delta[i] = 0;
+			previousFlightPrice[i] = 0d;
+			flight_updates[i] = false;
+			start8tickets = false;
+			for (int j = 0; j < 40; j++) {
+				// the chance for the hidden variable at start of the game is
+				// equal.
+				flight_hiddenxf[i][j] = 0.025d;
+
+			}
+		}
 		calculateAllocation();
 		sendBids();
 	}
@@ -623,7 +585,8 @@ public class DummyAgent extends AgentImpl {
 				Bid bid = new Bid(i);
 				bid.addBidPoint(alloc, price);
 				if (DEBUG) {
-					log.finest("submitting bid with alloc=" + agent.getAllocation(i) + " own="
+					log.finest("submitting bid with alloc="
+							+ agent.getAllocation(i) + " own="
 							+ agent.getOwn(i));
 				}
 				agent.submitBid(bid);
@@ -635,25 +598,32 @@ public class DummyAgent extends AgentImpl {
 	private void updatePrices() {
 		for (int i = 0; i < 28; i++) {
 			if (i < 4) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_FLIGHT, TACAgent.TYPE_INFLIGHT, i + 1);
+				information[i] = agent.getAuctionFor(TACAgent.CAT_FLIGHT,
+						TACAgent.TYPE_INFLIGHT, i + 1);
 			}
 
 			else if (i < 8) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_FLIGHT, TACAgent.TYPE_OUTFLIGHT, i - 2);
+				information[i] = agent.getAuctionFor(TACAgent.CAT_FLIGHT,
+						TACAgent.TYPE_OUTFLIGHT, i - 2);
 			} else if (i < 12) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_HOTEL, TACAgent.TYPE_CHEAP_HOTEL, i - 7);
+				information[i] = agent.getAuctionFor(TACAgent.CAT_HOTEL,
+						TACAgent.TYPE_CHEAP_HOTEL, i - 7);
 
 			} else if (i < 16) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_HOTEL, TACAgent.TYPE_GOOD_HOTEL, i - 11);
+				information[i] = agent.getAuctionFor(TACAgent.CAT_HOTEL,
+						TACAgent.TYPE_GOOD_HOTEL, i - 11);
 			} else if (i < 20) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_ENTERTAINMENT,
+				information[i] = agent.getAuctionFor(
+						TACAgent.CAT_ENTERTAINMENT,
 						TACAgent.TYPE_ALLIGATOR_WRESTLING, i - 15);
 			} else if (i < 24) {
-				information[i] = agent.getAuctionFor(TACAgent.CAT_ENTERTAINMENT, TACAgent.TYPE_AMUSEMENT,
+				information[i] = agent.getAuctionFor(
+						TACAgent.CAT_ENTERTAINMENT, TACAgent.TYPE_AMUSEMENT,
 						i - 19);
 			} else if (i < 28) {
-				information[i] = agent
-						.getAuctionFor(TACAgent.CAT_ENTERTAINMENT, TACAgent.TYPE_MUSEUM, i - 23);
+				information[i] = agent.getAuctionFor(
+						TACAgent.CAT_ENTERTAINMENT, TACAgent.TYPE_MUSEUM,
+						i - 23);
 			}
 		}
 	}
@@ -664,15 +634,11 @@ public class DummyAgent extends AgentImpl {
 			int inFlight = agent.getClientPreference(i, TACAgent.ARRIVAL);
 			int outFlight = agent.getClientPreference(i, TACAgent.DEPARTURE);
 			int hotel = agent.getClientPreference(i, TACAgent.HOTEL_VALUE);
-			
-			//initialize client preferences and probable flights.
+			// initialize client preferences and probable flights.
 			probableNightIn[i] = inFlight;
 			probableNightOut[i] = outFlight;
 			customerOutPreference[i] = outFlight;
 			customerInPreference[i] = inFlight;
-
-			log.fine("MARTINOS TESTING, INFLIGHT: " + inFlight + " OUTFLIGHT: " + outFlight + " HOTEL: "
-					+ hotel + "gameLEngth: " + agent.getGameTimeLeft());
 
 			// if the hotel value is greater than 70 we will select the
 			// expensive hotel (type = 1)
@@ -692,7 +658,8 @@ public class DummyAgent extends AgentImpl {
 
 	private int bestEntDay(int inFlight, int outFlight, int type) {
 		for (int i = inFlight; i < outFlight; i++) {
-			int auction = agent.getAuctionFor(TACAgent.CAT_ENTERTAINMENT, type, i);
+			int auction = agent.getAuctionFor(TACAgent.CAT_ENTERTAINMENT, type,
+					i);
 			if (agent.getAllocation(auction) < agent.getOwn(auction)) {
 				return auction;
 			}
